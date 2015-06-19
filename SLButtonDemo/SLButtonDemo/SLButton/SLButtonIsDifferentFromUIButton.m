@@ -58,7 +58,7 @@
 
         } and:^{
             
-            self.titleEdgeInsets = UIEdgeInsetsMake(0, -self.imageView.image.size.width, -self.imageView.image.size.height, 0);
+            self.titleEdgeInsets = UIEdgeInsetsMake(0, -self.imageView.image.size.width, -self.imageView.image.size.height - self.titleLabel.frame.size.height * 0.5 - 20, 0);
             
         }];
         
@@ -68,7 +68,7 @@
             self.imageEdgeInsets = UIEdgeInsetsMake(0, self.titleLabel.frame.size.width, 0, 0);
             
         } and:^{
-            self.titleEdgeInsets = UIEdgeInsetsMake(0, -self.imageView.image.size.width, self.imageView.image.size.height, 0);
+            self.titleEdgeInsets = UIEdgeInsetsMake(0, -self.imageView.image.size.width, self.imageView.image.size.height + self.titleLabel.frame.size.height * 0.5 + 20, 0);
             
         }];
         

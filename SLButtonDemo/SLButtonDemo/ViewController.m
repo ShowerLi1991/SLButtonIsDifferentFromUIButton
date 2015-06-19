@@ -18,13 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SLButtonIsDifferentFromUIButton * btn = [SLButtonIsDifferentFromUIButton SLButtonWithType:SLButtonTypeButtonWhoesTitleIsLeftImage];
+    SLButtonIsDifferentFromUIButton * btn = [SLButtonIsDifferentFromUIButton SLButtonWithType:SLButtonTypeButtonWhoesTitleIsUnderImage];
     
     [self.view addSubview:btn];
     
-    btn.backgroundColor = [UIColor grayColor];
+    btn.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
     
     [btn setTitle:@"萨达十的" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:@"Icon-60"] forState:UIControlStateNormal];
 
     btn.frame = CGRectMake(100, 100, 200, 300);
