@@ -39,13 +39,11 @@
 - (void)setImage:(nullable UIImage *)image forState:(UIControlState)state {
     
     [super setImage:image forState:state];
-    [self setTitleAndImageEdgeInsetsWithSLButtonType:self.SLButtonType];
 }
 
 - (void)setTitle:(nullable NSString *)title forState:(UIControlState)state {
     
     [super setTitle:title forState:state];
-    [self setTitleAndImageEdgeInsetsWithSLButtonType:self.SLButtonType];
 }
 
 - (void)setTitleAndImageEdgeInsetsWithSLButtonType:(SLButtonType)SLButtonType {
@@ -88,11 +86,10 @@
     
 }
 
-- (void)setFrame:(CGRect)frame {
-    
-    [super setFrame:frame];
+- (void)layoutSubviews {
+    [super layoutSubviews];
     [self setTitleAndImageEdgeInsetsWithSLButtonType:self.SLButtonType];
-    
+
 }
 
 - (void)imageExsitAndTextExsitblock:(void(^)())imageExsit and:(void(^)())textExsit {

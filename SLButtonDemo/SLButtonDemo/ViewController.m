@@ -28,7 +28,7 @@
     [btn setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:@"Icon-60"] forState:UIControlStateNormal];
 
-    btn.frame = CGRectMake(100, 100, 200, 300);
+        btn.frame = CGRectMake(100, 100, 200, 300);
 
 }
 
