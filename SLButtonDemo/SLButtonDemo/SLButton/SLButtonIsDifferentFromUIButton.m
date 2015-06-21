@@ -30,7 +30,7 @@
 - (instancetype)initWithButtonType:(SLButtonType)SLButtonType {
     if (self = [super init]) {
         self.SLButtonType = SLButtonType;
-        self.contentEdgeInsets = UIEdgeInsetsMake(0, -600, 0, -600);
+        self.contentEdgeInsets = UIEdgeInsetsMake(0, -1000, 0, -1000);
     }
     return self;
 }
