@@ -40,7 +40,7 @@
     
     if (SLButtonType == SLButtonTypeButtonWhoesTitleIsUnderImage) {
         
-        [self imageExsitAndTextExsitblock:^{
+        [self imageExsitAndTextExsitBlock:^{
            
             self.imageEdgeInsets = UIEdgeInsetsMake(0, self.titleLabel.frame.size.width, 0, 0);
 
@@ -52,7 +52,7 @@
         
     } else if (SLButtonType == SLButtonTypeButtonWhoesTitleIsOverImage) {
         
-        [self imageExsitAndTextExsitblock:^{
+        [self imageExsitAndTextExsitBlock:^{
             self.imageEdgeInsets = UIEdgeInsetsMake(0, self.titleLabel.frame.size.width, 0, 0);
             
         } and:^{
@@ -62,7 +62,7 @@
         
     } else if (SLButtonType == SLButtonTypeButtonWhoesTitleIsLeftImage) {
         
-        [self imageExsitAndTextExsitblock:^{
+        [self imageExsitAndTextExsitBlock:^{
             self.imageEdgeInsets = UIEdgeInsetsMake(0, self.frame.size.width - self.imageView.image.size.width, 0, 0);
 
         } and:^{
@@ -82,7 +82,7 @@
 
 }
 
-- (void)imageExsitAndTextExsitblock:(void(^)())imageExsit and:(void(^)())textExsit {
+- (void)imageExsitAndTextExsitBlock:(void(^)())imageExsit and:(void(^)())textExsit {
     
     if (self.imageView.image) {
         textExsit();
