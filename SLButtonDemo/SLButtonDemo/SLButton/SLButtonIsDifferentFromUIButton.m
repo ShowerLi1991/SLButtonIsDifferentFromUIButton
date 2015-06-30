@@ -36,16 +36,6 @@
 }
 
 
-- (void)setImage:(nullable UIImage *)image forState:(UIControlState)state {
-    
-    [super setImage:image forState:state];
-}
-
-- (void)setTitle:(nullable NSString *)title forState:(UIControlState)state {
-    
-    [super setTitle:title forState:state];
-}
-
 - (void)setTitleAndImageEdgeInsetsWithSLButtonType:(SLButtonType)SLButtonType {
     
     if (SLButtonType == SLButtonTypeButtonWhoesTitleIsUnderImage) {
